@@ -744,7 +744,7 @@ MTK_FOTA_ENTRY=no
 # Firmware Upgrade Over The Air
 MTK_FOTA_SUPPORT=no
 
-GMT_FOTA_SUPPORT=yes
+GMT_FOTA_SUPPORT=no
 # Low cost phone using increasingly smaller  RAM size, the size of the SD card. Customers  can choose fsck_msdos_mtk to time for space.
 MTK_FSCK_MSDOS_MTK=no
 MTK_FSCK_TUNE=no
@@ -1620,9 +1620,9 @@ MTK_WIFI_HOTSPOT_SUPPORT=yes
 MTK_WLAN_SUPPORT=yes
 #CREATE_PROJECT_INFO=20140220232929
 # User can input ASCII string which is showed in About phone and bootimg header.
-CUSTOM_BUILD_VERNO=SW10_FLY_IQ4511_Qcta_2014_09_24
+CUSTOM_BUILD_VERNO= SW12_FLY_IQ4511_Qcta_2014_12_03
 # add for internal verno customization by jinhaijian showed in 9375
-CUSTOM_INTERNAL_BUILD_VERNO= J608_FLY_I1_V0.16.5_S0924
+CUSTOM_INTERNAL_BUILD_VERNO= J608_FLY_I1_V0.17.1_S1203
 #add for rgk internal verno ,showed in 9875, it same as CUSTOM_INTERNAL_BUILD_VERN O if it is null
 RGK_INTERNAL_BUILD_VERNO=
 #ALPS.JB9.MP.V1.10 , showed in About phone-->version info
@@ -1650,6 +1650,7 @@ RGK_USB_DRIVER_DISPLAY_PRODUCT_PART2 =
 #add lixiaobin BUG_ID:JWLJ-147 20140325 start
 RGK_OTA_SUPPORT = no
 RGK_OTA_DELETE_SETTINGS_ABOUT_SYSTEMUPDATES=no
+ROCK_GOTA_SUPPORT = yes
 #add lixiaobin BUG_ID:JWLJ-147 20140325 end
 #add BUG_ID:JWLJ-156 chenshu 20140325 (start)
 RGK_DELIVERY_REPORT_SETTING = yes
