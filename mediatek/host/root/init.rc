@@ -521,7 +521,7 @@ on post-fs-data
     mkdir /data/misc/sensor 0774 system system
     mkdir /data/misc/akmd 0770 system system
     mkdir /data/misc/s62x 0771 compass compass
-    mkdir /data/acdapi/ 0770 system system
+    mkdir /data/misc/acdapi/ 0770 system system
     chmod 0666 /data/misc/acdapi/calib.dat
     chmod 0666 /data/misc/acdapi/param.dat
     chmod 0666 /data/misc/acdapi/sensors.dat

@@ -83,6 +83,11 @@ obj-$(CONFIG_ISO9660_FS)	+= isofs/
 obj-$(CONFIG_HFSPLUS_FS)	+= hfsplus/ # Before hfs to find wrapped HFS+
 obj-$(CONFIG_HFS_FS)		+= hfs/
 obj-$(CONFIG_ECRYPT_FS)		+= ecryptfs/
+
+ifeq ($(MTK_SDCARDFS), yes)
+obj-y		+= sdcardfs/
+endif
+
 obj-$(CONFIG_VXFS_FS)		+= freevxfs/
 obj-$(CONFIG_NFS_FS)		+= nfs/
 obj-$(CONFIG_EXPORTFS)		+= exportfs/
@@ -128,3 +133,4 @@ obj-$(CONFIG_PSTORE)		+= pstore/
 
 # Patched by YAFFS
 obj-$(CONFIG_YAFFS_FS)		+= yaffs2/
+obj-$(CONFIG_DYNAMIC_FSYNC)  += dyn_sync_cntrl.o
