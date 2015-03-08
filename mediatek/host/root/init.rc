@@ -381,6 +381,15 @@ on post-fs-data
     chown system system /data/resource-cache
     chmod 0771 /data/resource-cache
 
+    # Set permissions for Xolo Themes
+
+    mkdir /data/themes 0777 system system
+    mkdir /data/themes/fonts 0777 system system
+    chown system system /data/themes/colors.txt
+    chmod 0777 /data/themes/colors.txt
+    chown system system /data/themes/contentList.txt
+    chmod 0777 /data/themes/contentList.txt
+
     # create the lost+found directories, so as to enforce our permissions
     mkdir /data/lost+found 0770 root root
 
@@ -521,7 +530,7 @@ on post-fs-data
     mkdir /data/misc/sensor 0774 system system
     mkdir /data/misc/akmd 0770 system system
     mkdir /data/misc/s62x 0771 compass compass
-    mkdir /data/misc/acdapi/ 0770 system system
+    mkdir /data/acdapi/ 0770 system system
     chmod 0666 /data/misc/acdapi/calib.dat
     chmod 0666 /data/misc/acdapi/param.dat
     chmod 0666 /data/misc/acdapi/sensors.dat
@@ -847,6 +856,8 @@ on boot
     # Assume SMP uses shared cpufreq policy for all CPUs
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
     chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+	chown system system	/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+	chmod 0660  /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 	chmod 0664 /sys/class/syna/gesenable
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
@@ -1756,6 +1767,3 @@ service MtkCodecService /system/bin/MtkCodecService
     class main
     user root
     group audio media sdcard_r
-
-service debugsrun /system/bin/debugsrun
-    oneshot

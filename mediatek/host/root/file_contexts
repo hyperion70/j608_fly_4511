@@ -1,4 +1,4 @@
-#line 1 "out/target/product/j608_fly/obj/CUSTGEN/custom/sepolicy/file_contexts"
+#line 1 "out/target/product/j608_xolo/obj/CUSTGEN/custom/sepolicy/file_contexts"
 ###########################################
 # Root
 /			u:object_r:rootfs:s0

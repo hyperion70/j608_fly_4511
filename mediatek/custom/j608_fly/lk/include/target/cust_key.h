@@ -8,8 +8,8 @@
 #define MT65XX_PMIC_RST_KEY	32 /*for pmic key use*/
 #define MT_CAMERA_KEY 		10
 
-#define MT65XX_BOOT_MENU_KEY       32   /* KEY_VOLUMEUP */
-#define MT65XX_MENU_SELECT_KEY     0   
-#define MT65XX_MENU_OK_KEY         MT65XX_PMIC_RST_KEY /* KEY_VOLUMEDOWN */
+#define MT65XX_BOOT_MENU_KEY       MT65XX_RECOVERY_KEY    /* KEY_VOLUMEUP */
+#define MT65XX_MENU_SELECT_KEY     MT65XX_BOOT_MENU_KEY   
+#define MT65XX_MENU_OK_KEY         MT65XX_FACTORY_KEY     /* KEY_VOLUMEDOWN */
 
 #endif /* __CUST_KEY_H__ */

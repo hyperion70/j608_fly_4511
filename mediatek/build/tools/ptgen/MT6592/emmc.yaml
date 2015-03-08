@@ -284,8 +284,8 @@
   Region: EMMC_USER
   Reserved: N
   Size_KB:
-    eng: 1105920
-    user: 1105920
+    eng: 4505600
+    user: 4505600
   Type: EXT4
 - Download: N
   Download_File: NONE
