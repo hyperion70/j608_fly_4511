@@ -1,14 +1,10 @@
-Fly IQ4511 or XOLO x8
-===============
+Kernel 3.4.111 for Fly IQ4511 or XOLO x8 (mt6592)
+=================================================
 
-Build Command
-
-kernel:
+Build Command ---> kernel ---> boot.img
 
 cd j608_fly_4511
 ./mk -o=TARGET_BUILD_VARIANT=user j608_fly n k
-
-Then, to create the boot.img:
 ./pack_bootimage.sh
 
 
